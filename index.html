@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <header>
+        <div class="row align-items-center">
+            <div class="col-1 col-lg-2">
+                <img src="specs/logo.svg" alt="Logo boolean" class="d-none d-lg-block">
+                <img src="specs/Logo.png" alt="Logo boolean" class="d--block d-lg-none">
+            </div>
+            <div class="col">
+                <label for="Search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <input type="text" id="search" placeholder="Prova a cercare: Lezioni di Laravel">
+            </div>
+            <div class="col-1 col-lg-2">
+                <div class="row align-items-center">
+                    <div class="col-auto d-none d-lg-block">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <i class="fa-solid fa-circle-question"></i>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="col-auto">
+                        <a data-bs-toggle="collapse" href="#notifications" role="button" aria-expanded="false" aria-controls="notifications">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                        <div class="collapse" id="notifications">
+                            <ul>
+                                <li>Profilo</li>
+                                <li>Fatturazione</li>
+                                <li>Logout</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+</body>
+</html>

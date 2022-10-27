@@ -1,0 +1,13 @@
+header li:hover{
+    background-color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+header a:hover{
+    color: #ff8f02;
+    opacity: 0.7;
+}
+
+[type="text"]:focus-visible{
+    outline: none;
+}
