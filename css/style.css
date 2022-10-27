@@ -1,4 +1,10 @@
 /* header rules */
+#ms_header_row{
+    height: 70px;
+    padding: 0 15px;
+    column-gap: 13px;
+}
+
 header img{
     width: 100%;
     max-height: 50px;
@@ -14,11 +20,6 @@ header img{
     width: calc(100% - 21px);
     background-color: #e5e5e5;
     padding: 7px;
-}
-
-#ms_header_row{
-    padding: 15px;
-    column-gap: 13px;
 }
 
 header .col-lg-2{
