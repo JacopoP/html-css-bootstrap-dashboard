@@ -1,5 +1,10 @@
+/* header hover rules */
 header li:hover{
     background-color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+header img:hover, header i:hover{
     cursor: pointer;
 }
 

@@ -1,25 +1,29 @@
-img{
+/* header rules */
+header img{
     width: 100%;
+    min-width: 34px;
+    max-width: 230px;
+    max-height: 50px;
 }
 
 #search{
+    background-color: #e5e5e5;
+    border-radius: 4px;
+}
+
+#search-bar{
     border: none;
     width: calc(100% - 21px);
     background-color: #e5e5e5;
     padding: 7px;
 }
 
-header .col{
-    background-color: #e5e5e5;
-    border-radius: 4px;
-}
-
-header .row{
-    padding: 10px;
+#ms_header_row{
+    padding: 15px;
     column-gap: 13px;
 }
 
-header .col-auto{
+header .col-1{
     position: relative;
 }
 

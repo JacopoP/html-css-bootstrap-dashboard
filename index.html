@@ -13,26 +13,33 @@
 <body>
 
     <header>
-        <div class="row align-items-center">
+        <div class="row align-items-center" id="ms_header_row">
+
             <div class="col-1 col-lg-2">
                 <img src="specs/logo.svg" alt="Logo boolean" class="d-none d-lg-block">
                 <img src="specs/Logo.png" alt="Logo boolean" class="d--block d-lg-none">
             </div>
-            <div class="col">
-                <label for="Search"><i class="fa-solid fa-magnifying-glass"></i></label>
-                <input type="text" id="search" placeholder="Prova a cercare: Lezioni di Laravel">
+
+            <div class="col" id="search">
+                <label for="search-bar"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <input type="text" id="search-bar" placeholder="Prova a cercare: Lezioni di Laravel">
             </div>
-            <div class="col-1 col-lg-2">
-                <div class="row align-items-center">
+
+            <nav class="col-1 col-lg-2">
+                <div class="row align-items-center justify-content-evenly">
+
                     <div class="col-auto d-none d-lg-block">
                         <i class="fa-solid fa-list"></i>
                     </div>
+
                     <div class="col-auto d-none d-lg-block">
                         <i class="fa-solid fa-circle-question"></i>
                     </div>
+
                     <div class="col-auto d-none d-lg-block">
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
+
                     <div class="col-auto">
                         <a data-bs-toggle="collapse" href="#notifications" role="button" aria-expanded="false" aria-controls="notifications">
                             <i class="fa-solid fa-bell"></i>
@@ -45,8 +52,10 @@
                             </ul>
                         </div>
                     </div>
+
                 </div>
-            </div>
+            </nav>
+
         </div>
     </header>
     
