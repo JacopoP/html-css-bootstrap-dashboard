@@ -1,18 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* header rules */
 #ms_header_row{
     height: 70px;
+    width: 100%;
     padding: 0 15px;
     column-gap: 13px;
 }
 
 header img{
-    width: 100%;
-    max-height: 50px;
+    height: 40px;
 }
 
 #search{
     background-color: #e5e5e5;
     border-radius: 4px;
+    padding: 0 10px;
 }
 
 #search-bar{
@@ -22,7 +29,7 @@ header img{
     padding: 7px;
 }
 
-header .col-lg-2{
+header .col-auto{
     position: relative;
 }
 
@@ -34,7 +41,7 @@ header a{
 header ul{
     position: absolute;
     bottom: -135px;
-    right: 10px;
+    right: 15px;
     list-style: none;
     box-shadow: 0px 0px 5px #000;
     padding: 5px 0;
@@ -45,4 +52,9 @@ header li{
     width: 140px;
     padding: 5px;
     border-radius: 4px;
+}
+
+/* main rules */
+main{
+    height: calc(100vh - 70px);
 }
