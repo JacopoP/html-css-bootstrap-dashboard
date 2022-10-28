@@ -18,4 +18,8 @@
     #sidebar{
         width: 68px;
     }
+
+    #sidebar #last_option{
+        width: 25px;
+    }
 }
