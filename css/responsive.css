@@ -22,4 +22,8 @@
     #sidebar #last_option{
         width: 25px;
     }
+
+    #main-body{
+        width: calc(100% - 68px);
+    }
 }

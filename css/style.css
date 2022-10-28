@@ -58,6 +58,7 @@ header li{
 /* main rules */
 main{
     height: calc(100vh - 70px);
+    display: flex;
 }
 
 /* sidebar rules */
@@ -102,4 +103,34 @@ main{
     top: -120px;
     transform: rotate(45deg);
     z-index: 0;
+}
+
+/* main body rules */
+#main-body{
+    width: calc(100% - 150px);
+}
+
+#top-bar{
+    font-size: .9rem;
+    color: #fff;
+    background-color: #1b72e8;
+    padding: 10px 15px 20px;
+}
+
+#top-bar h2{
+    display: inline;
+}
+
+#top-bar .ms_breadcumb_item{
+    display: inline-block;
+    min-width: 25px;
+    background-color: #122fb8;
+    opacity: .8;
+    padding: 2px 5px;
+    border-radius: 30px;
+    transition: all 0.05s linear;
+}
+
+#top-bar .row > *{
+    padding-top: 10px;
 }
