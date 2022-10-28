@@ -8,12 +8,13 @@ header img:hover, header i:hover{
     cursor: pointer;
 }
 
-header a:hover{
+header .btn:hover, header .btn.show{
+    border: none;
     color: #ff8f02;
     opacity: 0.7;
 }
 
-[type="text"]:focus-visible{
+[type="text"]:focus-visible, header .btn{
     outline: none;
 }
 

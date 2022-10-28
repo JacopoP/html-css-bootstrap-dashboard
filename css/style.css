@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #f8f9fa;
+}
+
 /* header rules */
 #ms_header_row{
     height: 70px;
@@ -34,13 +38,15 @@ header .col-auto{
     position: relative;
 }
 
-header a{
+header .btn{
     height: 24px;
+    padding: 0;
     color: #ff8f02;
 }
 
 header ul{
     position: absolute;
+    background-color: #fff;
     bottom: -135px;
     right: 15px;
     list-style: none;
@@ -110,6 +116,7 @@ main{
     width: calc(100% - 150px);
 }
 
+/* topbar rules */
 #top-bar{
     font-size: .9rem;
     color: #fff;
@@ -133,4 +140,9 @@ main{
 
 #top-bar .row > *{
     padding-top: 10px;
+}
+
+/* big part rules */
+form > *:not(label){
+    margin-bottom: 20px;
 }
