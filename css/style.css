@@ -64,9 +64,27 @@ main{
 #sidebar{
     width: 150px;
     height: 100%;
+    padding: 25px;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(0deg, rgba(5,30,52,1) 0%, rgba(27,53,78,1) 100%);
+    background: linear-gradient(0deg, rgba(5,30,52,1) 0%, #183149 100%);
+    color: #fff;
+}
+
+#sidebar .sidebar_option{
+    margin-bottom: 10px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+#sidebar #last_option{
+    position: absolute;
+    bottom: 0px;
+}
+
+#sidebar i{
+    width: 25px;
 }
 
 #sidebar::before {
@@ -77,18 +95,22 @@ main{
     height: 300px;
     position: absolute;
     left: 0;
-    top: -90px;
+    top: -120px;
     transform: rotate(45deg);
+    z-index: 0;
 }
 
-#sidebar::after {
-    background: rgba(5,30,52,1);
-    content: '';
-    display: block;
-    width:300px;
-    height: 300px;
-    position: absolute;
-    left: 0;
-    bottom: -90px;
-    transform: rotate(45deg);
+@media screen and (min-height:1500px) {
+    #sidebar::after {
+        background: rgba(5,30,52,1);
+        content: '';
+        display: block;
+        width:300px;
+        height: 300px;
+        position: absolute;
+        left: 0;
+        bottom: -90px;
+        transform: rotate(45deg);
+        z-index: 0;
+    }
 }

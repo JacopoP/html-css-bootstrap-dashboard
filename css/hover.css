@@ -16,3 +16,7 @@ header a:hover{
 [type="text"]:focus-visible{
     outline: none;
 }
+
+.sidebar_option:hover{
+    cursor: pointer;
+}
