@@ -1,0 +1,29 @@
+/* Sfondo inferiore sidebar */
+@media screen and (min-height:1500px) {
+    #sidebar::after {
+        background: rgba(5,30,52,1);
+        content: '';
+        display: block;
+        width:300px;
+        height: 300px;
+        position: absolute;
+        left: 0;
+        bottom: -90px;
+        transform: rotate(45deg);
+        z-index: 0;
+    }
+}
+
+@media all and (max-width:991.5px) {
+    #sidebar{
+        width: 68px;
+    }
+
+    #sidebar #last_option{
+        width: 25px;
+    }
+
+    #main-body{
+        width: calc(100% - 68px);
+    }
+}

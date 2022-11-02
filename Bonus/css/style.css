@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f8f9fa;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* header rules */
+#ms_header_row{
+    height: 70px;
+    width: 100%;
+    padding: 0 15px;
+    column-gap: 13px;
+}
+
+header img{
+    max-height: 40px;
+    max-width: 150px;
+}
+
+#search{
+    background-color: #e5e5e5;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+#search-bar{
+    border: none;
+    width: calc(100% - 21px);
+    background-color: #e5e5e5;
+    padding: 7px;
+}
+
+header .col-auto{
+    position: relative;
+}
+
+header .btn{
+    height: 24px;
+    padding: 0;
+    color: #ff8f02;
+}
+
+header ul{
+    box-shadow: 0px 0px 5px #000;
+}
+
+header li{
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* main rules */
+main{
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+/* sidebar rules */
+#sidebar{
+    width: 150px;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(5,30,52,1) 0%, #183149 100%);
+    color: #fff;
+}
+
+#sidebar .sidebar_option{
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    transition: all 0.05s linear;
+}
+
+#sidebar #last_option{
+    position: absolute;
+    bottom: 20px;
+    width: 110px;
+}
+
+#sidebar i{
+    width: 25px;
+}
+
+#sidebar::before {
+    background: rgba(5,30,52,1);
+    content: '';
+    display: block;
+    width:300px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: -120px;
+    transform: rotate(45deg);
+    z-index: 0;
+}
+
+/* main body rules */
+#main-body{
+    width: calc(100% - 150px);
+    overflow-y: auto;
+}
+
+/* topbar rules */
+#top-bar{
+    font-size: .9rem;
+    color: #fff;
+    background-color: #1b72e8;
+    padding: 10px 15px 20px;
+}
+
+#top-bar h2{
+    display: inline;
+}
+
+#top-bar .ms_breadcumb_item{
+    display: inline-block;
+    min-width: 25px;
+    background-color: #122fb8;
+    opacity: .8;
+    padding: 2px 5px;
+    border-radius: 30px;
+    transition: all 0.05s linear;
+}
+
+#top-bar .row > *{
+    padding-top: 10px;
+}
+
+/* big part rules */
+#main-body section{
+    border: 1px solid #d3d3d3;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.ms_title{
+    border-bottom: 1px solid #d3d3d3;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ms_body{
+    background-color: #fff;
+    padding: 20px 20px 30px;
+}
+
+/* next classes rules */
+.ms_title > .btn{
+    color: #1b72e8;
+    border: 1px solid #1b72e8;
+    border-radius: 4px;
+    font-size: 30px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+form > *:not(label){
+    margin-bottom: 20px;
+}
+
+#class_first_row{
+    font-weight: bold;
+    padding-right: 8px;
+}
+
+.class_row{
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px 0;
+    text-align: center;
+    column-gap: 35px;
+}
+
+.fa-code{
+    display: inline-block;
+    color: #fff;
+    background-color: #ef5c48;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.state{
+    font-size: 0.8rem;
+    color: #fff;
+    padding: 1px 3px 2px;
+    border-radius: 6px;
+}
+
+.state.done{
+    background-color: #11824d;
+}
+
+.state.process{
+    background-color: #ffc108;
+}
+
+.state.failed{
+    background-color: #da3545;
+}
+
+.class_action{
+    display: inline-block;
+    padding: 1px 0px;
+    width: 25px;
+    line-height: 25px;
+    color: #6a737b;
+    border: 1px solid #6a737b;
+    border-radius: 4px;
+}
+
+/* to do rules */
+#to-do{
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+}
+
+.to-do-item{
+    border-bottom: 1px solid #d3d3d3;
+    list-style: none;
+    padding: 5px 10px;
+}
+
+/* graph rules */
+#graph{
+    padding: 15px;
+}
+
+#graph .ms_body{
+    border: 1px solid #d3d3d3;
+    border-radius: 6px;
+    padding: 0;
+}
+
+#graph .ms_body > *{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.n_users{
+    border-top: 1px solid #d3d3d3;
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#report{
+    border-top: 1px solid #d3d3d3;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
