@@ -155,6 +155,12 @@ main{
     align-items: center;
 }
 
+.ms_body{
+    background-color: #fff;
+    padding: 20px 20px 30px;
+}
+
+/* next classes rules */
 .ms_title > .btn{
     color: #1b72e8;
     border: 1px solid #1b72e8;
@@ -166,11 +172,6 @@ main{
 
 form > *:not(label){
     margin-bottom: 20px;
-}
-
-.ms_body{
-    background-color: #fff;
-    padding: 20px 20px 30px;
 }
 
 #class_first_row{
@@ -198,7 +199,7 @@ form > *:not(label){
     font-size: 0.8rem;
     color: #fff;
     padding: 1px 3px 2px;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 .state.done{
@@ -224,6 +225,7 @@ form > *:not(label){
     border-radius: 4px;
 }
 
+/* to do rules */
 #to-do{
     border: 1px solid #d3d3d3;
     border-radius: 4px;
@@ -237,6 +239,7 @@ form > *:not(label){
     padding: 5px 10px;
 }
 
+/* graph rules */
 #graph{
     padding: 15px;
 }
@@ -253,7 +256,6 @@ form > *:not(label){
 }
 
 .n_users{
-    border-bottom: 1px solid #d3d3d3;
     border-top: 1px solid #d3d3d3;
     list-style: none;
     padding-top: 5px;
@@ -261,6 +263,7 @@ form > *:not(label){
 }
 
 #report{
+    border-top: 1px solid #d3d3d3;
     padding-top: 10px;
     padding-bottom: 15px;
 }
