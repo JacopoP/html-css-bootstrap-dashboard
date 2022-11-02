@@ -82,7 +82,7 @@ main{
 
 #sidebar #last_option{
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     width: 110px;
 }
 
@@ -106,6 +106,7 @@ main{
 /* main body rules */
 #main-body{
     width: calc(100% - 150px);
+    overflow-y: auto;
 }
 
 /* topbar rules */
@@ -135,6 +136,85 @@ main{
 }
 
 /* big part rules */
+#main-body section{
+    border: 1px solid #d3d3d3;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.ms_title{
+    border-bottom: 1px solid #d3d3d3;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ms_title > .btn{
+    color: #1b72e8;
+    border: 1px solid #1b72e8;
+    border-radius: 4px;
+    font-size: 30px;
+    line-height: 20px;
+    padding: 10px;
+}
+
 form > *:not(label){
     margin-bottom: 20px;
+}
+
+.ms_body{
+    background-color: #fff;
+    padding: 20px 20px 30px;
+}
+
+#class_first_row{
+    font-weight: bold;
+}
+
+.class_row{
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.fa-code{
+    display: inline-block;
+    color: #fff;
+    background-color: #ef5c48;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.state{
+    font-size: 0.8rem;
+    color: #fff;
+    padding: 1px 3px 2px;
+    border-radius: 4px;
+}
+
+.state.done{
+    background-color: #11824d;
+}
+
+.state.process{
+    background-color: #ffc108;
+    margin-right: -6px;
+}
+
+.state.failed{
+    background-color: #da3545;
+}
+
+.class_action{
+    display: inline-block;
+    padding: 1px 0px;
+    width: 25px;
+    line-height: 25px;
+    color: #6a737b;
+    border: 1px solid #6a737b;
+    border-radius: 4px;
 }

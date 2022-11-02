@@ -30,3 +30,13 @@ header .btn:hover, header .btn.show, header .btn{
     opacity: 1;
     cursor: pointer;
 }
+
+.class_row:not(#class_first_row):hover{
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.class_action:hover{
+    background-color: #6a737b;
+    color: #fff;
+    cursor: pointer;
+}

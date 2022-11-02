@@ -21,7 +21,7 @@
                 <img src="specs/Logo.png" alt="Logo boolean" class="d--block d-lg-none">
             </div>
 
-            <div class="col" id="search">
+            <div class="col-auto" id="search">
                 <label for="#search-bar"><i class="fa-solid fa-magnifying-glass"></i></label>
                 <input type="text" id="search-bar" placeholder="Prova a cercare: Lezioni di Laravel">
             </div>
@@ -118,40 +118,322 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row g-0">
 
-                <div class="col-12 col-lg-8">
+                <div class="col-12 col-lg-8 p-3">
 
-                    <div id="next-classes">
-                        <h2>Prossime classi</h2>
-                        
-                        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#add_new_class" role="button" aria-controls="add_new_class">
-                            +
-                          </a>
-                          
-                          <div class="offcanvas offcanvas-end" tabindex="-1" id="add_new_class" aria-labelledby="add_new_classLabel">
-                            <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="add_new_classLabel">Aggiungi classe</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <section id="next-classes">
+
+                        <div class="ms_title">
+                            <h2>Prossime classi</h2>
+                            
+                            <a class="btn" data-bs-toggle="offcanvas" href="#add_new_class" role="button" aria-controls="add_new_class">
+                                +
+                            </a>
+                            
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="add_new_class" aria-labelledby="add_new_classLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="add_new_classLabel">Aggiungi classe</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <form action="#">
+                                        <label for="#nome-classe">Nome</label>
+                                        <input class="form-control" type="text" placeholder="Classe--" id="nome-classe">
+                                        <label for="starting-date">Data inizio</label>
+                                        <input type="date" class="form-control" id="starting-date">
+                                        <button type="button" class="btn btn-primary">Salva</button>
+                                        <button type="button" class="btn btn-warning">Reset</button>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="offcanvas-body">
-                                <form action="#">
-                                    <label for="#nome-classe">Nome</label>
-                                    <input class="form-control" type="text" placeholder="Classe--" id="nome-classe">
-                                    <label for="starting-date">Data inizio</label>
-                                    <input type="date" class="form-control" id="starting-date">
-                                    <button type="button" class="btn btn-primary">Salva</button>
-                                    <button type="button" class="btn btn-warning">Reset</button>
-                                </form>
-                            </div>
-                          </div>
 
                         </div>
-                    </div>
+                        <div class="ms_body">
+                            <div class="row class_row justify-content-between" id="class_first_row">
+
+                                <div class="col-4 text-start">
+                                    Nome
+                                </div>
+
+                                <div class="col-auto d-none d-md-block">
+                                    Data inizio
+                                </div>
+
+                                <div class="col-auto d-none d-sm-block">
+                                    ROI
+                                </div>
+
+                                <div class="col-auto">
+                                    Stato
+                                </div>
+
+                                <div class="col-auto">
+                                    Azioni
+                                </div>
+                                
+                            </div>
+
+                            <div class="row class_row justify-content-between" id="ms_first_row">
+
+                                <div class="col-4 text-start">
+                                    <i class="fa-solid fa-code"></i>
+                                    Classe 75
+                                </div>
+
+                                <div class="col-auto d-none d-md-block">
+                                    15 Feb 2021
+                                </div>
+
+                                <div class="col-auto d-none d-sm-block">
+                                    20&percnt;
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="state done">Done</span>
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="class_action"><i class="fa-solid fa-pen"></i></span>
+                                    <span class="class_action"><i class="fa-solid fa-trash"></i></span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row class_row justify-content-between" id="ms_first_row">
+
+                                <div class="col-4 text-start">
+                                    <i class="fa-solid fa-code"></i>
+                                    Classe 76
+                                </div>
+
+                                <div class="col-auto d-none d-md-block">
+                                    16 Feb 2021
+                                </div>
+
+                                <div class="col-auto d-none d-sm-block">
+                                    20&percnt;
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="state done">Done</span>
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="class_action"><i class="fa-solid fa-pen"></i></span>
+                                    <span class="class_action"><i class="fa-solid fa-trash"></i></span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row class_row justify-content-between" id="ms_first_row">
+
+                                <div class="col-4 text-start">
+                                    <i class="fa-solid fa-code"></i>
+                                    Classe 77
+                                </div>
+
+                                <div class="col-auto d-none d-md-block">
+                                    17 Feb 2021
+                                </div>
+
+                                <div class="col-auto d-none d-sm-block">
+                                    20&percnt;
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="state process">process</span>
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="class_action"><i class="fa-solid fa-pen"></i></span>
+                                    <span class="class_action"><i class="fa-solid fa-trash"></i></span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row class_row justify-content-between" id="ms_first_row">
+                                <div class="col-4 text-start">
+                                    <i class="fa-solid fa-code"></i>
+                                    Classe 78
+                                </div>
+                                <div class="col-auto d-none d-md-block">
+                                    18 Feb 2021
+                                </div>
+
+                                <div class="col-auto d-none d-sm-block">
+                                    20&percnt;
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="done state">Done</span>
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="class_action"><i class="fa-solid fa-pen"></i></span>
+                                    <span class="class_action"><i class="fa-solid fa-trash"></i></span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row class_row justify-content-between" id="ms_first_row">
+
+                                <div class="col-4 text-start">
+                                    <i class="fa-solid fa-code"></i>
+                                    Classe 79
+                                </div>
+
+                                <div class="col-auto d-none d-md-block">
+                                    19 Feb 2021
+                                </div>
+
+                                <div class="col-auto d-none d-sm-block">
+                                    20&percnt;
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="state failed">failed</span>
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="class_action"><i class="fa-solid fa-pen"></i></span>
+                                    <span class="class_action"><i class="fa-solid fa-trash"></i></span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row class_row justify-content-between" id="ms_first_row">
+
+                                <div class="col-4 text-start">
+                                    <i class="fa-solid fa-code"></i>
+                                    Classe 80
+                                </div>
+
+                                <div class="col-auto d-none d-md-block">
+                                    20 Feb 2021
+                                </div>
+
+                                <div class="col-auto d-none d-sm-block">
+                                    20&percnt;
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="state done">Done</span>
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="class_action"><i class="fa-solid fa-pen"></i></span>
+                                    <span class="class_action"><i class="fa-solid fa-trash"></i></span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row class_row justify-content-between" id="ms_first_row">
+
+                                <div class="col-4 text-start">
+                                    <i class="fa-solid fa-code"></i>
+                                    Classe 81
+                                </div>
+
+                                <div class="col-auto d-none d-md-block">
+                                    21 Feb 2021
+                                </div>
+
+                                <div class="col-auto d-none d-sm-block">
+                                    20&percnt;
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="state failed">failed</span>
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="class_action"><i class="fa-solid fa-pen"></i></span>
+                                    <span class="class_action"><i class="fa-solid fa-trash"></i></span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row class_row justify-content-between" id="ms_first_row">
+
+                                <div class="col-4 text-start">
+                                    <i class="fa-solid fa-code"></i>
+                                    Classe 82
+                                </div>
+
+                                <div class="col-auto d-none d-md-block">
+                                    22 Feb 2021
+                                </div>
+
+                                <div class="col-auto d-none d-sm-block">
+                                    20&percnt;
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="state done">Done</span>
+                                </div>
+
+                                <div class="col-auto">
+                                    <span class="class_action"><i class="fa-solid fa-pen"></i></span>
+                                    <span class="class_action"><i class="fa-solid fa-trash"></i></span>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section id="faq">
+
+                        <div class="ms_title">
+                            <h2>F.A.Q.</h2>
+                        </div>
+
+                        <div class="ms_body">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Come aggiungere una nuova classe&quest;
+                                      </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Come posso accedere alle informazioni del mio account&quest;
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Posso usare questa dashboard da mobile&quest;
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </section>
 
                 </div>
 
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 p-3">
                     
                 </div>
 
