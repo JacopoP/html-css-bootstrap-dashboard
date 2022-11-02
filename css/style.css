@@ -7,6 +7,10 @@ body{
     background-color: #f8f9fa;
 }
 
+img{
+    max-width: 100%;
+}
+
 /* header rules */
 #ms_header_row{
     height: 70px;
@@ -140,6 +144,7 @@ main{
     border: 1px solid #d3d3d3;
     border-radius: 6px;
     margin-bottom: 25px;
+    overflow: hidden;
 }
 
 .ms_title{
@@ -217,4 +222,45 @@ form > *:not(label){
     color: #6a737b;
     border: 1px solid #6a737b;
     border-radius: 4px;
+}
+
+#to-do{
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+}
+
+.to-do-item{
+    border-bottom: 1px solid #d3d3d3;
+    list-style: none;
+    padding: 5px 10px;
+}
+
+#graph{
+    padding: 15px;
+}
+
+#graph .ms_body{
+    border: 1px solid #d3d3d3;
+    border-radius: 6px;
+    padding: 0;
+}
+
+#graph .ms_body > *{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.n_users{
+    border-bottom: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#report{
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
